@@ -107,7 +107,7 @@ export const CollectibleForm = (props: FormProps) => {
           {({ form }) => {
             const formFile = form?.values?.content?.files?.[0]
             return (
-              <FormControl isInvalid={errors.content && !!touched.content} isRequired id="content">
+              <FormControl isInvalid={errors.content && !!touched.content} id="content">
                 <FileUploadField
                   initialFilePreview={
                     formFile
@@ -148,9 +148,9 @@ export const CollectibleForm = (props: FormProps) => {
 
         {values?.contentId && (
           <>
-            <Field name="title">
+            <Field name="type">
               {({ field, form }) => (
-                <FormControl isInvalid={errors.title && touched.title} id="title" isRequired>
+                <FormControl isInvalid={errors.title && touched.title} id="type">
                   <VStack
                     alignItems="flex-start"
                     py="1rem"
@@ -164,7 +164,43 @@ export const CollectibleForm = (props: FormProps) => {
                       my="auto"
                       htmlFor="title"
                     >
-                      Title
+                      Nature of Work
+                    </FormLabel>
+                    <Spacer />
+                    <Input
+                      variant="outline"
+                      rounded="2xl"
+                      size="lg"
+                      w={{ base: "100%" }}
+                      {...field}
+                      id="title"
+                      placeholder="Song Recording Copyright , Music Composition Copyright, Licensing Contract, Other Contract"
+                      maxLength={50}
+                      ondirty
+                    />
+                  </VStack>
+
+                  <FormErrorMessage fontWeight="semibold">{form.errors.title}</FormErrorMessage>
+                </FormControl>
+              )}
+            </Field>
+            <Field name="title">
+              {({ field, form }) => (
+                <FormControl isInvalid={errors.title && touched.title} id="title">
+                  <VStack
+                    alignItems="flex-start"
+                    py="1rem"
+                    spacing="0.25rem"
+                    direction={{ base: "column", md: "row" }}
+                  >
+                    <FormLabel
+                      fontWeight="semibold"
+                      color="gray.600"
+                      fontSize="xl"
+                      my="auto"
+                      htmlFor="title"
+                    >
+                      Title of Work
                     </FormLabel>
                     <Spacer />
                     <Input
@@ -186,11 +222,7 @@ export const CollectibleForm = (props: FormProps) => {
             </Field>
             <Field name="description">
               {({ field, form }) => (
-                <FormControl
-                  isInvalid={errors.description && touched.description}
-                  id="description"
-                  isRequired
-                >
+                <FormControl isInvalid={errors.description && touched.description} id="description">
                   <VStack
                     alignItems="flex-start"
                     justifyContent="space-between"
@@ -225,6 +257,42 @@ export const CollectibleForm = (props: FormProps) => {
                 </FormControl>
               )}
             </Field>
+            <Field name="number">
+              {({ field, form }) => (
+                <FormControl isInvalid={errors.title && touched.title} id="type">
+                  <VStack
+                    alignItems="flex-start"
+                    py="1rem"
+                    spacing="0.25rem"
+                    direction={{ base: "column", md: "row" }}
+                  >
+                    <FormLabel
+                      fontWeight="semibold"
+                      color="gray.600"
+                      fontSize="xl"
+                      my="auto"
+                      htmlFor="title"
+                    >
+                      Copyright Registration or Contract Number
+                    </FormLabel>
+                    <Spacer />
+                    <Input
+                      variant="outline"
+                      rounded="2xl"
+                      size="lg"
+                      w={{ base: "100%" }}
+                      {...field}
+                      id="title"
+                      placeholder="PAu 7-654-321"
+                      maxLength={50}
+                      ondirty
+                    />
+                  </VStack>
+
+                  <FormErrorMessage fontWeight="semibold">{form.errors.title}</FormErrorMessage>
+                </FormControl>
+              )}
+            </Field>
             <VStack
               alignItems="flex-start"
               py="1rem"
@@ -239,8 +307,8 @@ export const CollectibleForm = (props: FormProps) => {
                 display="flex"
                 alignItems="center"
               >
-                Properties
-                <InfoPopOver message="Properties that will be added to the blockchain for any minted NFTs." />
+                Royalty Split
+                <InfoPopOver message="Enter the parties and the Royalty percentage of each party." />
               </FormLabel>
               <FieldArray name="metadata">
                 {(arrayHelpers) => <MetadataForm arrayHelpers={arrayHelpers} values={values} />}
@@ -248,11 +316,7 @@ export const CollectibleForm = (props: FormProps) => {
             </VStack>
             <Field name="numEntities">
               {({ field, form }) => (
-                <FormControl
-                  id="numEntities"
-                  isRequired
-                  isInvalid={errors.numEntities && touched.numEntities}
-                >
+                <FormControl id="numEntities" isInvalid={errors.numEntities && touched.numEntities}>
                   <VStack
                     alignItems="flex-start"
                     py="1rem"
@@ -268,8 +332,8 @@ export const CollectibleForm = (props: FormProps) => {
                       display="flex"
                       alignItems="center"
                     >
-                      Supply
-                      <InfoPopOver message="Number of NFTs that can be minted from this template" />
+                      # of Music Licenses to be Sold
+                      <InfoPopOver message="Number of Music Licenses that can be minted from this Contract" />
                     </FormLabel>
                     <Spacer />
                     <NumberInput

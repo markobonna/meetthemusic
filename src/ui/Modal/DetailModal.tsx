@@ -244,6 +244,8 @@ export const DetailModal = ({
                       "image/heif": [],
                       "image/webp": [],
                       "video/*": [],
+                      "audio/*": [],
+                      ".pdf": [],
                     }}
                     h="100%"
                     disabled={!isEditable}
@@ -398,7 +400,7 @@ export const DetailModal = ({
                       >
                         <Flex alignItems="center" mb="0.4rem">
                           <Text fontWeight="bold" fontSize="16px">
-                            Properties
+                            Royalty Split
                             {propertiesEditMode ? (
                               <IconButton
                                 aria-label="edit"

@@ -79,13 +79,13 @@ export const MetadataForm = (props: {
                 {({ field }) => (
                   <FormControl id={`metadata.${index}.key`}>
                     <FormLabel fontSize="sm" htmlFor={`metadata.${index}.key`}>
-                      Name
+                      Account Number
                     </FormLabel>
                     <Input
                       {...field}
                       variant="outline"
                       id={`metadata.${index}.key`}
-                      placeholder={"Eyes"}
+                      placeholder={"0x2f7ab250bcf9048b "}
                       maxLength={50}
                       margin="0.5"
                       size="sm"
@@ -104,13 +104,13 @@ export const MetadataForm = (props: {
                 {({ field }) => (
                   <FormControl id={`metadata.${index}.val`}>
                     <FormLabel fontSize="sm" htmlFor={`metadata.${index}.val`}>
-                      Value
+                      Royalty Percentage
                     </FormLabel>
                     <Input
                       {...field}
                       variant="outline"
                       id={`metadata.${index}.val`}
-                      placeholder={"Big"}
+                      placeholder={"10%"}
                       maxLength={50}
                       borderRadius="lg"
                       margin="0.5"

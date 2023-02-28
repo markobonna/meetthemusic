@@ -169,7 +169,7 @@ export const ItemDetail = ({ nftModel, nft }: Props) => {
       <MintRequestModal disclosure={disclosure} />
       <Heading>{nftModel.title}</Heading>
       <Text fontSize="0.8rem" mb="2rem" fontStyle="italic">
-        An NFT from MintMe
+        Maintained by Meet the Music
       </Text>
       <Stack
         direction={{ base: "column", lg: "row" }}
@@ -405,27 +405,11 @@ export const ItemDetail = ({ nftModel, nft }: Props) => {
             <Image src="/logo.svg" maxW="25rem" alt="logo" />
             <Box mt="1.5rem">
               <Heading size="lg" mb="1rem">
-                About MintMe
+                About Meet the Music
               </Heading>
-              MintMe is a no-code mint tool to mint NFTs on the{" "}
-              <ChakraLink color="purple.100" target="_blank" href=" https://flow.com/">
-                Flow
-              </ChakraLink>{" "}
-              blockchain. It is powered by{" "}
-              <ChakraLink color="purple.100" target="_blank" href="https://niftory.com">
-                Niftory
-              </ChakraLink>
-              , a web3 API that makes it easy for any developer to quickly integrate NFTs, digital
-              wallets and other web3 concepts into their applications, with or without blockchain
-              expertise.{" "}
-              <ChakraLink
-                color="purple.100"
-                target="_blank"
-                href="https://docs.niftory.com/home/v/api/getting-started/api-quickstart"
-              >
-                Get started
-              </ChakraLink>{" "}
-              with your free Niftory API key today.
+              Meet the Music is where the music industry lives. From audio, to video, to contracts,
+              copyrights and licensing, Met the Music makes the buying and selling of royalties as
+              easy as pie.
             </Box>
           </Flex>
         </Box>
