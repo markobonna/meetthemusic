@@ -48,7 +48,7 @@ export const EmbedModal = ({ nftModel, nft, disclosure }: NftModalProps) => {
     process.env.NEXT_PUBLIC_VERCEL_URL
   }/app/collection/embed/${nftModel.id}${
     nft ? `?nftId=${nft.id}` : ""
-  }" title="NFT powered by MintMe" height="350px" width="300px"/>`
+  }" title="powered by Meet the Music Blockchain" height="350px" width="300px"/>`
   const { isOpen, onClose } = disclosure
   const { onCopy, hasCopied } = useClipboard(value)
   const [isPreviewVisible, setPreviewVisible] = useState(false)

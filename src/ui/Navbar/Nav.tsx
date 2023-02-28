@@ -34,14 +34,78 @@ export const Navbar = ({ onOpen }) => {
     if (!session) {
       return [
         {
-          title: "Get In",
+          href: "/listen",
+          component: (
+            <Link href="/listen" passHref>
+              <ChakraLink
+                fontWeight="bold"
+                display="flex"
+                alignItems="center"
+                color="content.400"
+                gap="0.3rem"
+              >
+                <Hide below="md">Listen</Hide>
+              </ChakraLink>
+            </Link>
+          ),
+        },
+        {
+          href: "/watch",
+          component: (
+            <Link href="/watch" passHref>
+              <ChakraLink
+                fontWeight="bold"
+                display="flex"
+                alignItems="center"
+                color="content.400"
+                gap="0.3rem"
+              >
+                <Hide below="md">Watch</Hide>
+              </ChakraLink>
+            </Link>
+          ),
+        },
+        {
+          href: "/rewardzone",
+          component: (
+            <Link href="/rewardzone" passHref>
+              <ChakraLink
+                fontWeight="bold"
+                display="flex"
+                alignItems="center"
+                color="content.400"
+                gap="0.3rem"
+              >
+                <Hide below="md">Reward Zone</Hide>
+              </ChakraLink>
+            </Link>
+          ),
+        },
+        {
+          href: "/industry",
+          component: (
+            <Link href="/industry" passHref>
+              <ChakraLink
+                fontWeight="bold"
+                display="flex"
+                alignItems="center"
+                color="content.400"
+                gap="0.3rem"
+              >
+                <Hide below="md">Artists & Industry Professionals</Hide>
+              </ChakraLink>
+            </Link>
+          ),
+        },
+        {
+          title: "Meet the Musician",
           component: (
             <Button
               rounded="3xl"
               isLoading={isLoading}
               cursor="pointer"
               onClick={onClick}
-              colorScheme="white"
+              colorScheme="red"
               minWidth={{ base: "100px", md: "180px" }}
               fontWeight={400}
               p={{ base: "1rem", md: "1.2rem 1rem" }}
@@ -52,29 +116,8 @@ export const Navbar = ({ onOpen }) => {
               my="0.2rem"
               leftIcon={<FaGoogle />}
             >
-              Sign in with Google
+              Sign in with Youtube Music
             </Button>
-          ),
-        },
-        {
-          href: "https://discord.gg/QAgDQXUGsU",
-          component: (
-            <ChakraLink
-              href="https://discord.gg/QAgDQXUGsU"
-              target="_blank"
-              color="content.400"
-              fontWeight="bold"
-              display="flex"
-              alignItems="center"
-              mt="0.1rem"
-              onClick={() => {
-                posthog.capture("HEADER_LAUNCH_DISCORD", {
-                  posthogEventDetail: "Opened Discord from top banner",
-                })
-              }}
-            >
-              <BsDiscord size="2rem" color="#2D3436" />
-            </ChakraLink>
           ),
         },
       ]
@@ -97,7 +140,6 @@ export const Navbar = ({ onOpen }) => {
                   })
                 }
               >
-                <Image src="/grid-icon.svg" alt="new collection" w="30px" />
                 <Hide below="md"> My Collection</Hide>
               </ChakraLink>
             </Link>
@@ -120,7 +162,6 @@ export const Navbar = ({ onOpen }) => {
                   })
                 }
               >
-                <AddIcon size={25} />
                 <Hide below="md"> Create</Hide>
               </ChakraLink>
             </Link>
@@ -137,28 +178,9 @@ export const Navbar = ({ onOpen }) => {
                 color="content.400"
                 gap="0.3rem"
               >
-                <UserIcon size={20} />
                 <Hide below="md">Account</Hide>
               </ChakraLink>
             </Link>
-          ),
-        },
-        {
-          href: "https://discord.gg/QAgDQXUGsU",
-          component: (
-            <ChakraLink
-              ml={{ md: "1rem" }}
-              mt="0.1rem"
-              href="https://discord.gg/QAgDQXUGsU"
-              target="_blank"
-              color="content.400"
-              fontWeight="bold"
-              display="flex"
-              alignItems="center"
-              gap="0.3rem"
-            >
-              <BsDiscord size="1.5rem" color="#2D3436" />
-            </ChakraLink>
           ),
         },
       ]
@@ -181,7 +203,7 @@ export const Navbar = ({ onOpen }) => {
             <Link href="/" passHref>
               <Image
                 boxSize={{ md: "70" }}
-                src="/mintme-logo-header.svg"
+                src="/logo.svg"
                 alt="logo"
                 zIndex="1000"
                 w={{ base: "6rem", md: "13rem" }}

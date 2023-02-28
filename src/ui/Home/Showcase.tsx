@@ -54,7 +54,7 @@ export const Showcase = () => {
   return (
     <Flex flexDir="column" my={{ base: "2rem", md: "6rem" }} px="1rem">
       <Heading fontSize={{ base: "4xl", md: "5xl" }} textAlign="center" pb="1rem">
-        Created With MintMe
+        Created With Meet the Music
       </Heading>
       <SimpleGrid
         minChildWidth={{ base: "full", md: "320px" }}

@@ -10,17 +10,12 @@ import {
   useColorModeValue,
   createIcon,
 } from "@chakra-ui/react"
+import { HowItWorks } from "ui/Home/HowItWorks"
+import AppLayout from "../components/AppLayout"
 
 export default function LandingPage() {
   return (
-    <>
-      <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
-
+    <AppLayout>
       <Container maxW={"3xl"}>
         <Stack
           as={Box}
@@ -86,8 +81,9 @@ export default function LandingPage() {
             </Box>
           </Stack>
         </Stack>
+        <HowItWorks />
       </Container>
-    </>
+    </AppLayout>
   )
 }
 

@@ -96,7 +96,7 @@ const EmbedPage = ({ nftModel, nft }: Props) => {
             )}
 
             <Box position="absolute" right="1" bottom="1">
-              <Image src="/mintme-logo-header.svg" alt="logo" h="2rem" />
+              <Image src="/logo.svg" alt="logo" h="2rem" />
             </Box>
           </Flex>
         </Flex>
