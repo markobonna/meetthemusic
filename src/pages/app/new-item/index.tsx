@@ -16,11 +16,17 @@ const NewItemPage = () => {
                 fontWeight="700"
                 textAlign="center"
                 maxW="600"
+                color="content.100"
                 fontSize={{ base: "3xl", md: "5xl" }}
               >
-                Manage your Copyrights, Contracts, and Payouts on the Blockchain!
+                Manage your Music as an NFT on Flow Blockchain
               </Heading>
+              <br></br>
             </Center>
+            <Heading as="h1" color="content.100" textAlign="center">
+              {" "}
+              Copyrights, Contracts, Streaming Royalty Payouts, and NFT sales
+            </Heading>
             <Flex
               minW={{ base: "100%", md: "800px" }}
               rounded="xl"
@@ -31,9 +37,6 @@ const NewItemPage = () => {
               <CollectibleCreateForm />
             </Flex>
           </Center>
-          <HowItWorks />
-          <SupportingResources />
-          <Showcase />
         </VStack>
       </AppLayout>
     </>

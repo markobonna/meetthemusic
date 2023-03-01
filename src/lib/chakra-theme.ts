@@ -25,18 +25,18 @@ const theme = extendTheme({
       100: "#A01CF0",
     },
     navbar: {
-      background: "white",
-      text: "black",
+      background: "#0B0F18",
+      text: "white",
     },
     header: {
-      background: "white",
+      background: "#0B0F18",
       text: "white",
       accent: "#FE2B2D",
     },
     page: {
-      background: "#eee",
-      text: "black",
-      accent: "white",
+      background: "#0B0F18",
+      text: "white",
+      accent: "black",
       buttons: "#B6A45D",
     },
     footer: {

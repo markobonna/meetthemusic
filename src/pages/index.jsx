@@ -81,7 +81,6 @@ export default function LandingPage() {
             </Box>
           </Stack>
         </Stack>
-        <HowItWorks />
       </Container>
     </AppLayout>
   )

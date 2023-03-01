@@ -41,7 +41,7 @@ export const Navbar = ({ onOpen }) => {
                 fontWeight="bold"
                 display="flex"
                 alignItems="center"
-                color="content.400"
+                color="content.100"
                 gap="0.3rem"
               >
                 <Hide below="md">Generate New Music with AI</Hide>
@@ -61,7 +61,7 @@ export const Navbar = ({ onOpen }) => {
               minWidth={{ base: "100px", md: "180px" }}
               fontWeight={400}
               p={{ base: "1rem", md: "1.2rem 1rem" }}
-              background="content.400"
+              background="content.100"
               fontSize={{ base: "12px", md: "14px" }}
               ml="1rem"
               h={{ base: "8", md: "10" }}
@@ -76,23 +76,17 @@ export const Navbar = ({ onOpen }) => {
     } else {
       return [
         {
-          title: "New Collection",
-          href: "/",
+          href: "/musicgenerator",
           component: (
-            <Link href="/app/collection" passHref>
+            <Link href="/musicgenerator" passHref>
               <ChakraLink
                 fontWeight="bold"
                 display="flex"
                 alignItems="center"
-                color="content.400"
+                color="content.100"
                 gap="0.3rem"
-                onClick={() =>
-                  posthog.capture("HEADER_VIEW_COLLECTION", {
-                    posthogEventDetail: "Opened My Collection from top banner",
-                  })
-                }
               >
-                <Hide below="md"> My Collection</Hide>
+                <Hide below="md">Generate New Music with AI</Hide>
               </ChakraLink>
             </Link>
           ),
@@ -106,7 +100,7 @@ export const Navbar = ({ onOpen }) => {
                 fontWeight="bold"
                 display="flex"
                 alignItems="center"
-                color="content.400"
+                color="content.100"
                 gap="0.3rem"
                 onClick={() =>
                   posthog.capture("HEADER_NEW_ITEM", {
@@ -114,11 +108,34 @@ export const Navbar = ({ onOpen }) => {
                   })
                 }
               >
-                <Hide below="md"> Create</Hide>
+                <Hide below="md"> Create an NFT</Hide>
               </ChakraLink>
             </Link>
           ),
         },
+        {
+          title: "New Collection",
+          href: "/",
+          component: (
+            <Link href="/app/collection" passHref>
+              <ChakraLink
+                fontWeight="bold"
+                display="flex"
+                alignItems="center"
+                color="content.100"
+                gap="0.3rem"
+                onClick={() =>
+                  posthog.capture("HEADER_VIEW_COLLECTION", {
+                    posthogEventDetail: "Opened My Collection from top banner",
+                  })
+                }
+              >
+                <Hide below="md"> My NFTs</Hide>
+              </ChakraLink>
+            </Link>
+          ),
+        },
+
         {
           href: "/app/account",
           component: (
@@ -127,10 +144,10 @@ export const Navbar = ({ onOpen }) => {
                 fontWeight="bold"
                 display="flex"
                 alignItems="center"
-                color="content.400"
+                color="content.100"
                 gap="0.3rem"
               >
-                <Hide below="md">Account</Hide>
+                <Hide below="md"> My Profile</Hide>
               </ChakraLink>
             </Link>
           ),
@@ -155,10 +172,10 @@ export const Navbar = ({ onOpen }) => {
             <Link href="/" passHref>
               <Image
                 boxSize={{ md: "70" }}
-                src="/logo.svg"
+                src="/logo.png"
                 alt="logo"
-                zIndex="1000"
-                w={{ base: "6rem", md: "13rem" }}
+                zIndex="2"
+                w={{ base: "10rem", md: "7rem" }}
                 py="4px"
               />
             </Link>

@@ -29,10 +29,6 @@ export default function MusicGenerator() {
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            Make money from <br />
-            <Text as={"span"} color={"green.400"}>
-              your audience
-            </Text>
             <div className="py-10">
               <Script
                 type="module"
@@ -40,19 +36,11 @@ export default function MusicGenerator() {
               ></Script>
               <gradio-app src="https://goudastudios-text-to-music.hf.space"></gradio-app>
             </div>
-            <div>
-              <Script
-                type="module"
-                src="https://gradio.s3-us-west-2.amazonaws.com/3.16.0/gradio.js"
-              ></Script>
-
-              <gradio-app src="https://fffiloni-spectrogram-to-music.hf.space"></gradio-app>
-            </div>
             <div className="mt-20">
               <iframe
-                src="https://fffiloni-spectrogram-to-music.hf.space"
+                src="https://goudastudios-text-to-music.hf.space"
                 width="850"
-                height="1000"
+                height="800"
               ></iframe>
             </div>
           </Heading>

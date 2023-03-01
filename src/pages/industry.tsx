@@ -40,7 +40,6 @@ const HomePage = () => {
             scrollRef?.current?.scrollIntoView({ behavior: "smooth", block: "nearest" })
           }}
         ></VStack>
-        <HowItWorks />
       </Center>
     </AppLayout>
   )
