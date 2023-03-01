@@ -61,7 +61,7 @@ export const Navbar = ({ onOpen }) => {
               minWidth={{ base: "100px", md: "180px" }}
               fontWeight={400}
               p={{ base: "1rem", md: "1.2rem 1rem" }}
-              background="content.100"
+              background="red"
               fontSize={{ base: "12px", md: "14px" }}
               ml="1rem"
               h={{ base: "8", md: "10" }}
