@@ -24,11 +24,31 @@ export default function MusicGenerator() {
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}
         >
+          <Text color={"white"}>
+            This was put together for the Flow Hackathon. And for that reason I am on the free plans
+            for all services. As you know, AI crushes GPU resources so the monthly GPU limit on
+            creating generative music may already be reached. But feel free to download the repo or
+            watch the hackathon video{" "}
+            <Text as={"span"} color={"red"}>
+              <a href=" https://devfolio.co/projects/meet-the-music-4071" rel="noreferrer">
+                HERE.
+              </a>
+            </Text>
+            Download the repo, put in the .env variables that are needed and you will be amazed.
+            Reach out to me on twitter
+            <Text as={"span"} color={"red"}>
+              <a href="https://twitter.com/MarkObonna" rel="noreferrer">
+                @markobonna.
+              </a>
+            </Text>
+          </Text>
           <Heading
             fontWeight={600}
-            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+            fontSize={{ base: "2xl", sm: "2xl", md: "2xl" }}
             lineHeight={"110%"}
           >
+            {" "}
+            <Text color={"white"}>Embeded</Text>
             <div className="py-10">
               <Script
                 type="module"
@@ -36,6 +56,7 @@ export default function MusicGenerator() {
               ></Script>
               <gradio-app src="https://goudastudios-text-to-music.hf.space"></gradio-app>
             </div>
+            <Text color={"white"}>Iframe</Text>
             <div className="mt-20">
               <iframe
                 src="https://goudastudios-text-to-music.hf.space"
