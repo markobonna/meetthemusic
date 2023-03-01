@@ -135,6 +135,7 @@ export const CollectibleForm = (props: FormProps) => {
                     "image/heif": [],
                     "image/webp": [],
                     "video/*": [],
+                    "audio/mp3": [],
                   }}
                 />
 
