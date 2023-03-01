@@ -14,6 +14,7 @@ import Head from "next/head"
 import { DEFAULT_TITLE } from "../constants/title"
 import posthog from "posthog-js"
 import { useRouter } from "next/router"
+import Script from "next/script"
 
 type AppProps<P = {}> = NextAppProps<P> & {
   Component: ComponentWithAuth
@@ -60,6 +61,10 @@ const App = ({ Component, pageProps: { session, auth, ...pageProps } }: AppProps
           <Toaster />
           <GraphQLClientProvider>
             <ChakraProvider theme={theme}>
+              <Script
+                type="module"
+                src="https://gradio.s3-us-west-2.amazonaws.com/3.16.0/gradio.js"
+              ></Script>
               <Component {...pageProps} />
             </ChakraProvider>
           </GraphQLClientProvider>

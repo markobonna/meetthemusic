@@ -245,6 +245,7 @@ export const DetailModal = ({
                       "image/webp": [],
                       "video/*": [],
                       "audio/mp3": [],
+                      "audio/*": [],
                       ".pdf": [],
                     }}
                     h="100%"

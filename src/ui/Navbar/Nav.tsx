@@ -34,9 +34,9 @@ export const Navbar = ({ onOpen }) => {
     if (!session) {
       return [
         {
-          href: "/listen",
+          href: "/musicgenerator",
           component: (
-            <Link href="/listen" passHref>
+            <Link href="/musicgenerator" passHref>
               <ChakraLink
                 fontWeight="bold"
                 display="flex"
@@ -44,55 +44,7 @@ export const Navbar = ({ onOpen }) => {
                 color="content.400"
                 gap="0.3rem"
               >
-                <Hide below="md">Listen</Hide>
-              </ChakraLink>
-            </Link>
-          ),
-        },
-        {
-          href: "/watch",
-          component: (
-            <Link href="/watch" passHref>
-              <ChakraLink
-                fontWeight="bold"
-                display="flex"
-                alignItems="center"
-                color="content.400"
-                gap="0.3rem"
-              >
-                <Hide below="md">Watch</Hide>
-              </ChakraLink>
-            </Link>
-          ),
-        },
-        {
-          href: "/rewardzone",
-          component: (
-            <Link href="/rewardzone" passHref>
-              <ChakraLink
-                fontWeight="bold"
-                display="flex"
-                alignItems="center"
-                color="content.400"
-                gap="0.3rem"
-              >
-                <Hide below="md">Reward Zone</Hide>
-              </ChakraLink>
-            </Link>
-          ),
-        },
-        {
-          href: "/industry",
-          component: (
-            <Link href="/industry" passHref>
-              <ChakraLink
-                fontWeight="bold"
-                display="flex"
-                alignItems="center"
-                color="content.400"
-                gap="0.3rem"
-              >
-                <Hide below="md">Artists & Industry Professionals</Hide>
+                <Hide below="md">Generate New Music with AI</Hide>
               </ChakraLink>
             </Link>
           ),
@@ -116,7 +68,7 @@ export const Navbar = ({ onOpen }) => {
               my="0.2rem"
               leftIcon={<FaGoogle />}
             >
-              Sign in with Youtube Music
+              Sign in with Google to save your Music
             </Button>
           ),
         },
