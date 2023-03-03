@@ -79,7 +79,7 @@ Follow instructions in my Google Colab page here: https://colab.research.google.
 
 Deploy your model to Hugging Face with Gradio. View my deployment here: https://huggingface.co/spaces/goudastudios/text-to-music
 
-Go to settings, then under "space hardware" select "T4 medium" or above. To run the model, then switch back to the CPU basic when not demoing yoru model to save on costs. The T4 model costs about $1 an hour to run.
+Go to settings, then under "space hardware" select "T4 medium" or above to run the model. Switch back to the free CPU basic  space hardware when not demoing your model to save on costs. The T4 model costs about $1 an hour to run.
 
 ## AI Local Server
 
