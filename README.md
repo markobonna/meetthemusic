@@ -42,24 +42,24 @@ Create .env file
 ### Add your variables to the .env file
 
 From Niftory: https://docs.niftory.com/
-From Dapper Wallet: https://docs.meetdapper.com/developing-for-the-platform
-NEXT_PUBLIC_API_KEY="insert_your_api_key_here"
-NEXT_PUBLIC_CLIENT_ID="insert_your_client_id_here"
-CLIENT_SECRET="insert_your_super_secret_client_secret_that_is_unique_to_your_app_DO_NOT_SHARE_OR_COMMIT"
-NIFTORY_AUTH_ISSUER="https://auth.staging.niftory.com"
-NEXT_PUBLIC_API_PATH="https://graphql.api.staging.niftory.com"
-NEXTAUTH_URL="http://localhost:insert_your_port"
-NEXTAUTH_SECRET="insert_your_secret_here"
-NEXT_PUBLIC_FLOW_ACCESS_API="https://access-testnet.onflow.org"
-NEXT_PUBLIC_WALLET_API="https://staging.accounts.meetdapper.com"
-NEXT_PUBLIC_FLOW_SCAN_URL="https://testnet.flowscan.org"
-NEXT_PUBLIC_NFT_ADDRESS="0x631e88ae7f1d7c20"
-NEXT_PUBLIC_NIFTORY_ADDRESS="0x04f74f0252479aed"
-NEXT_PUBLIC_REGISTRY_ADDRESS="0x6085ae87e78e1433"
-NEXT_PUBLIC_MERCHANT_ACCOUNT_ADDRESS="insert_your_dapper_organization_address_here"
-NEXT_PUBLIC_ENV="development"
-NEXT_PUBLIC_VERCEL_URL="insert.your.public.application.url"
-FLASK_URL="http://127.0.0.1:3013/run_inference" (only use if you are runing AI server locally)
+<br/>From Dapper Wallet: https://docs.meetdapper.com/developing-for-the-platform
+<br/>NEXT_PUBLIC_API_KEY="insert_your_api_key_here"
+<br/>NEXT_PUBLIC_CLIENT_ID="insert_your_client_id_here"
+<br/>CLIENT_SECRET="insert_your_super_secret_client_secret_that_is_unique_to_your_app_DO_NOT_SHARE_OR_COMMIT"
+<br/>NIFTORY_AUTH_ISSUER="https://auth.staging.niftory.com"
+<br/>NEXT_PUBLIC_API_PATH="https://graphql.api.staging.niftory.com"
+<br/>NEXTAUTH_URL="http://localhost:insert_your_port"
+<br/>NEXTAUTH_SECRET="insert_your_secret_here"
+<br/>NEXT_PUBLIC_FLOW_ACCESS_API="https://access-testnet.onflow.org"
+<br/>NEXT_PUBLIC_WALLET_API="https://staging.accounts.meetdapper.com"
+<br/>NEXT_PUBLIC_FLOW_SCAN_URL="https://testnet.flowscan.org"
+<br/>NEXT_PUBLIC_NFT_ADDRESS="0x631e88ae7f1d7c20"
+<br/>NEXT_PUBLIC_NIFTORY_ADDRESS="0x04f74f0252479aed"
+<br/>NEXT_PUBLIC_REGISTRY_ADDRESS="0x6085ae87e78e1433"
+<br/>NEXT_PUBLIC_MERCHANT_ACCOUNT_ADDRESS="insert_your_dapper_organization_address_here"
+<br/>NEXT_PUBLIC_ENV="development"
+<br/>NEXT_PUBLIC_VERCEL_URL="insert.your.public.application.url"
+<br/>FLASK_URL="http://127.0.0.1:3013/run_inference" (only use if you are runing AI server locally)
 
 ### Install Dependencies
 
