@@ -1,6 +1,6 @@
 # Meet the Music
 
-This project was built for the 2023 Flow Hackathon
+This project was built for the 2023 Flow Hackathon with a special Thank You to the teams at Next.js, Flow Blockchain, Dapper Wallet, Niftory, and Riffusion.
 
 ## Tech Stack
 
