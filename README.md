@@ -75,7 +75,7 @@ yarn dev
 
 ## AI Cloud Server
 
-Follow instructions in my Google Colab page here: https://colab.research.google.com/drive/14ytufJVb_wUIk_bjCZ8PjidtO4OVdmnV#scrollTo=c-TJZ4p219yK
+Follow instructions in my Google Colab page here: [Meet the Music](https://colab.research.google.com/drive/14ytufJVb_wUIk_bjCZ8PjidtO4OVdmnV?usp=sharing)
  
 
 Deploy your model to Hugging Face with Gradio. View my deployment here: https://huggingface.co/spaces/goudastudios/text-to-music
