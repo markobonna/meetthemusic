@@ -76,10 +76,13 @@ yarn dev
 ## AI Cloud Server
 
 Follow instructions in my Google Colab page here: https://colab.research.google.com/drive/14ytufJVb_wUIk_bjCZ8PjidtO4OVdmnV#scrollTo=c-TJZ4p219yK
+ 
 
 Deploy your model to Hugging Face with Gradio. View my deployment here: https://huggingface.co/spaces/goudastudios/text-to-music
 
 Go to settings, then under "space hardware" select "T4 medium" or above to run the model. Switch back to the free CPU basic  space hardware when not demoing your model to save on costs. The T4 model costs about $1 an hour to run.
+
+Note this model will not run if you have it on the Free plan. Please reach out to me on twitter at [MarkObonna](https://twitter.com/MarkObonna)at and I will switch my model from free to T4 plan so you can use the demo.
 
 ## AI Local Server
 
